@@ -63,8 +63,8 @@
   
   document.addEventListener('DOMContentLoaded', function() {
     function game() {
-      var THEGAME = document.getElementById('mygame').innerHTML
-      var thegame = '<div positio'
+      let THEGAME = document.getElementById('mygame')
+      let thegame = '<div style="position:absolute; top: 300px; left: 400px"><h1>https://github.com/SolarTypS/widgeTetriS--</div>'
       THEGAME.innerHTML= thegame
 
     }

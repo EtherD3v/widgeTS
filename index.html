@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta charset="utf-8" />
+    <h1>widgeTS</h1>
+    by SolarTypS
+  </head>
+  <script src="src/script.js" type="module"></script>
+  <body>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CObject.entries%2CObject.assign"></script>
+    <div
+      id="horloge"
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 75px;
+        height: 65vh;
+      "
+    >
+      <!-- J'ai ajouté le style display: flex, align-items: center, justify-content: center et height: 100vh à la div horloge -->
+      <button
+        id="bouton"
+        type=" submit"
+        value="Tim"
+        name="Time"
+        style="
+          background-color: rgb(72, 171, 149);
+          height: 100px;
+          width: 100px;
+          position: absolute;
+          top: 35px;
+          left: 1350px;
+        "
+      >
+        <div style="font-size: 30px">TIME</div>
+      </button>
+    </div>
+
+    <div id="meteo">
+      <button
+        id="bouton2"
+        type="submit"
+        value="Météo"
+        name="Météo"
+        style="
+          background-color: rgb(209, 54, 36);
+          height: 100px;
+          width: 100px;
+          position: absolute;
+          top: 200px;
+          left: 1350px;
+        "
+      >
+        <div style="font-size: 25px">INFO METEO</div>
+      </button>
+    </div>
+    <div
+      id="ww_e961d86a70a7f"
+      style="top: 130; left: 0"
+      v="1.3"
+      loc="id"
+      a='{"t":"ticker","lang":"fr","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'
+    >
+      Source de données météorologiques:
+      <a
+        href="https://wetterlang.de/london_wetter_21_tage/"
+        id="ww_e961d86a70a7f_u"
+        target="_blank"
+        >London 21 tage wetter</a
+      >
+    </div>
+    <script
+      async
+      src="https://app2.weatherwidget.org/js/?id=ww_e961d86a70a7f"
+    ></script>
+
+    <div id="recherche">
+      <button
+        id="research"
+        type="submit"
+        style="
+          background-color: rgb(180, 209, 36);
+          height: 100px;
+          width: 100px;
+          position: absolute;
+          top: 365px;
+          left: 1350px;
+        "
+      >
+        <div style="font-size: 20px">SOOTLE</div>
+      </button>
+    </div>
+
+    <div id="mygame">
+      <button
+        id="bouton4"
+        type="submit"
+        style="
+          background-color: rgb(48, 209, 36);
+          height: 100px;
+          width: 100px;
+          position: absolute;
+          top: 530px;
+          left: 1350px;
+        "
+      >
+        <div style="font-size: 30px">GAME</div>
+      </button>
+    </div>
+  </body>
+</html>

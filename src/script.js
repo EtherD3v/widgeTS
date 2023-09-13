@@ -1,3 +1,4 @@
+import "./style.css";
 // script.js
   window.addEventListener('DOMContentLoaded', function() {
     // Définir la fonction timing
@@ -7,21 +8,21 @@
         var i = new Date();
     // Formater l'heure avec des zéros devant les minutes et les secondes si besoin
         var années = i.getFullYear()
-        var mois = i.getMonth() < 10 ? "0" + i.getMonth() : i.getMonth() 
+        var mois = i.getMonth() < 10 ? "0" + i.getMonth() : i.getMonth()
         var jours = i.getDate() < 10 ? "0" + i.getDate() : i.getDate()
         var heures = i.getHours();
         var minutes = i.getMinutes() < 10 ? "0" + i.getMinutes() : i.getMinutes();
         var secondes = i.getSeconds() < 10 ? "0" + i.getSeconds() : i.getSeconds();
     // Afficher l'heure dans l'élément horloge
-        var l = " <span> Bonjour, il est <span style='font-style:italic'> " + heures + 
+        var l = " <span> Bonjour, il est <span style='font-style:italic'> " + heures +
         ":" + minutes + ":" + secondes + "</span> </span>"  + "<span style='font-size: 25px'>" + "(" + jours + "/" + mois + "(sorry, the month isn't exact)" + "/" +  années + ")" ;
        // J'ai supprimé la balise h2 et le style text-align: center de la variable l car ils sont déjà définis dans la div horloge
         t.innerHTML = l
   }
-  
+
   // Sélectionner le bouton
     let bouton = document.getElementById("bouton");
-  
+
   // Ajouter un écouteur d'événements sur le clic du bouton
     bouton.addEventListener("click", function() {
     // Appeler la fonction timing une fois au clic
@@ -29,8 +30,8 @@
     // Appeler la fonction timing toutes les secondes ensuite
     setInterval(timing, 1000);
   });
-  
-  
+
+
   })
 
   window.addEventListener('DOMContentLoaded', function () {
@@ -44,23 +45,23 @@
       météo();
     })
   })
-  
+
   window.addEventListener('DOMContentLoaded', function() {
     function motor() {
         let ui  = '<div style="font-size="15px"><input id="recherche" type="auto" value="tapez votre recherche => https://cse.google.com/cse?cx=523870d2f229b460d" style="background-color: beige; height: 40px; width: 1000px; position: absolute; top: 150px; left: 235;">'
         let iu = '<img src="21fda3547f2043408c29a869ad147b85.png" alt="Mon logo Sootle"></img>'
-      
+
         let search = document.getElementById("recherche")
-        search.innerHTML = iu + ui 
-        
+        search.innerHTML = iu + ui
+
     }
     let bouton3 = document.getElementById("research");
     bouton3.addEventListener("click", function() {
       motor()
     })
- 
-  }) 
-  
+
+  })
+
   document.addEventListener('DOMContentLoaded', function() {
     function game() {
       let THEGAME = document.getElementById('mygame')
@@ -72,11 +73,5 @@
     bouton4.addEventListener('click', function(){
       game()
     })
-  
+
   })
-
-    
-  
-
-  
-

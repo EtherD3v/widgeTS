@@ -27,8 +27,11 @@ btnTime.addEventListener("click", () => {
 });
 
 const weatherWidget = document.querySelector("#weather");
-function weather() {
-  weatherWidget.textContent = "WIP";
+async function weather() {
+  const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m&forecast_days=1");
+  const json = await response.json();
+  const deg = json.hourly.temperature_2m[12];
+  weatherWidget.textContent = `${deg}°C`;
   weatherWidget.classList.toggle("invisible");
 }
 

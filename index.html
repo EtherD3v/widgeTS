@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>widgeTS</title>
@@ -5,105 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="src/main.js" type="module" defer></script>
   </head>
-  <body>
-    <div
-      id="horloge"
-      style="
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 75px;
-        height: 65vh;
-      "
-    >
-      <button
-        id="bouton"
-        type=" submit"
-        value="Tim"
-        name="Time"
-        style="
-          background-color: rgb(72, 171, 149);
-          height: 100px;
-          width: 100px;
-          position: absolute;
-          top: 35px;
-          left: 1350px;
-        "
-      >
-        <div style="font-size: 30px">TIME</div>
-      </button>
-    </div>
-
-    <div id="meteo">
-      <button
-        id="bouton2"
-        type="submit"
-        value="Météo"
-        name="Météo"
-        style="
-          background-color: rgb(209, 54, 36);
-          height: 100px;
-          width: 100px;
-          position: absolute;
-          top: 200px;
-          left: 1350px;
-        "
-      >
-        <div style="font-size: 25px">INFO METEO</div>
-      </button>
-    </div>
-    <div
-      id="ww_e961d86a70a7f"
-      style="top: 130; left: 0"
-      v="1.3"
-      loc="id"
-      a='{"t":"ticker","lang":"fr","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'
-    >
-      Source de données météorologiques:
-      <a
-        href="https://wetterlang.de/london_wetter_21_tage/"
-        id="ww_e961d86a70a7f_u"
-        target="_blank"
-        >London 21 tage wetter</a
-      >
-    </div>
-    <script
-      async
-      src="https://app2.weatherwidget.org/js/?id=ww_e961d86a70a7f"
-    ></script>
-
-    <div id="recherche">
-      <button
-        id="research"
-        type="submit"
-        style="
-          background-color: rgb(180, 209, 36);
-          height: 100px;
-          width: 100px;
-          position: absolute;
-          top: 365px;
-          left: 1350px;
-        "
-      >
-        <div style="font-size: 20px">SOOTLE</div>
-      </button>
-    </div>
-
-    <div id="mygame">
-      <button
-        id="bouton4"
-        type="submit"
-        style="
-          background-color: rgb(48, 209, 36);
-          height: 100px;
-          width: 100px;
-          position: absolute;
-          top: 530px;
-          left: 1350px;
-        "
-      >
-        <div style="font-size: 30px">GAME</div>
-      </button>
-    </div>
+  <body class="bg-background text-text h-screen flex flex-col justify-center items-center">
+    <main class="grow">
+      <section class="invisible widget bg-time before:bg-time text-2xl" id="clock"></section>
+      <section class="invisible widget bg-weather before:bg-weather text-2xl" id="weather"></section>
+      <section class="invisible widget bg-search before:bg-search text-2xl" id="search"></section>
+      <section class="invisible widget bg-game before:bg-game text-2xl" id="game"></section>
+    </main>
+    <nav class="h-17 py-2 grid-cols-4 grid w-4/5 gap-5 max-w-2xl">
+      <button class="bg-time h-full text-xl rounded-md hover:brightness-75" id="btn-time">time</button>
+      <button class="bg-weather h-full text-xl rounded-md hover:brightness-75" id="btn-weather">weather</button>
+      <button class="bg-search h-full text-xl rounded-md hover:brightness-75" id="btn-search">search</button>
+      <button class="bg-game h-full text-xl rounded-md hover:brightness-75" id="btn-game">game</button>
+    </nav>
   </body>
 </html>

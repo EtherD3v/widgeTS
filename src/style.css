@@ -1,13 +1,30 @@
-  button {
-    filter: brightness(100%); /* luminosité normale */
-  }
-  
-  button:hover {
-    filter: brightness(50%); /* luminosité réduite de moitié */
-  }
-  img {
-    position: absolute; top: 10px; left: 650px;
-  }
-  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer components {
+  .widget {
+    @apply fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-xl h-lg rounded-lg flex flex-col overflow-hidden before:absolute before:left-0 before:top-0 before:h-5 before:w-full before:contrast-200 dark:before:brightness-200 before:rounded-b-lg flex justify-center items-center;
+  }
+}
 
+@layer base {
+  :root {
+    --text: #301503;
+    --background: #f8e7e7;
+    --game: #a4ef96;
+    --time: #9fd5f9;
+    --weather: #ef6c6c;
+    --search: #e5e279;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #fdf7f7;
+      --background: #180707;
+      --game: #0e8a00;
+      --time: #063c60;
+      --weather: #931010;
+      --search: #858119;
+    }
+  }
+}

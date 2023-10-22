@@ -10,8 +10,12 @@
     <main class="grow">
       <section class="invisible widget bg-time before:bg-time text-2xl" id="clock"></section>
       <section class="invisible widget bg-weather before:bg-weather text-2xl" id="weather"></section>
-      <section class="invisible widget bg-search before:bg-search text-2xl" id="search"></section>
-      <section class="invisible widget bg-game before:bg-game text-2xl" id="game"></section>
+      <section class="invisible widget bg-search before:bg-search text-2xl" id="search">
+        <object class="w-4/5 h-4/5" data="https://yep.com" width="800" height="600" type="text/html"></object>
+      </section>
+      <section class="invisible widget bg-game before:bg-game text-2xl" id="game">
+        <object class="w-4/5 h-4/5" data="https://tetris.trungk18.com" width="800" height="600" type="text/html"></object>
+      </section>
     </main>
     <nav class="h-17 py-2 grid-cols-4 grid w-4/5 gap-5 max-w-2xl">
       <button class="bg-time h-full text-xl rounded-md hover:brightness-75" id="btn-time">time</button>

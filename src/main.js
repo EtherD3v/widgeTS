@@ -37,7 +37,6 @@ btnWeather.addEventListener("click", weather);
 
 const searchWidget = document.querySelector("#search");
 function search() {
-  searchWidget.textContent = "WIP";
   searchWidget.classList.toggle("invisible");
 }
 const btnSearch = document.querySelector("#btn-search");
@@ -45,7 +44,6 @@ btnSearch.addEventListener("click", search);
 
 const gameWidget = document.querySelector("#game");
 function game() {
-  gameWidget.textContent = "WIP";
   gameWidget.classList.toggle("invisible");
 }
 let btnGame = document.querySelector("#btn-game");

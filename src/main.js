@@ -2,6 +2,17 @@ import "./style.css";
 
 const userLang = navigator.language || navigator.userLanguage;
 
+const widgets = [...document.querySelectorAll(".widget")];
+
+widgets.forEach(widget => {
+  widget.addEventListener("drag", e => {
+    console.log(e)
+    if (e.screenX === 0) return;
+    widget.style.left = `${e.x}px`;
+    widget.style.top = `${e.y}px`;
+  });
+});
+
 const clockWidget = document.querySelector("#clock");
 function timing() {
   window.requestAnimationFrame(timing);

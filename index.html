@@ -7,21 +7,21 @@
     <script src="src/main.js" type="module" defer></script>
   </head>
   <body class="bg-background text-text h-screen flex flex-col justify-center items-center">
-    <main class="grow">
-      <section class="invisible widget bg-time before:bg-time text-2xl" id="clock"></section>
-      <section class="invisible widget bg-weather before:bg-weather text-4xl" id="weather"></section>
-      <section class="invisible widget bg-search before:bg-search text-2xl" id="search">
+    <main class="grow overflow-hidden">
+      <section class="invisible widget bg-time before:bg-time text-2xl" id="clock" draggable="true"></section>
+      <section class="invisible widget bg-weather before:bg-weather text-4xl" id="weather" draggable="true"></section>
+      <section class="invisible widget bg-search before:bg-search text-2xl" id="search" draggable="true">
         <object class="w-4/5 h-4/5" data="https://yep.com" width="800" height="600" type="text/html"></object>
       </section>
-      <section class="invisible widget bg-game before:bg-game text-2xl" id="game">
+      <section class="invisible widget bg-game before:bg-game text-2xl" id="game" draggable="true">
         <object class="w-4/5 h-4/5" data="https://tetris.trungk18.com" width="800" height="600" type="text/html"></object>
       </section>
     </main>
-    <nav class="h-17 py-2 grid-cols-4 grid w-4/5 gap-5 max-w-2xl">
+    <nav class="h-17 py-2 grid-cols-4 grid w-4/5 gap-5 max-w-2xl z-10">
       <button class="bg-time h-full text-xl rounded-md hover:brightness-75" id="btn-time">time</button>
-      <button class="bg-weather h-full text-xl rounded-md hover:brightness-75" id="btn-weather">weather</button>
-      <button class="bg-search h-full text-xl rounded-md hover:brightness-75" id="btn-search">search</button>
-      <button class="bg-game h-full text-xl rounded-md hover:brightness-75" id="btn-game">game</button>
+      <button class="bg-weather h-full text-xl rounded-md hover:brightness-75 shadow-xl" id="btn-weather">weather</button>
+      <button class="bg-search h-full text-xl rounded-md hover:brightness-75 shadow-xl" id="btn-search">search</button>
+      <button class="bg-game h-full text-xl rounded-md hover:brightness-75 shadow-xl" id="btn-game">game</button>
     </nav>
   </body>
 </html>

@@ -4,7 +4,7 @@
 
 @layer components {
   .widget {
-    @apply fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-xl h-lg rounded-lg flex flex-col overflow-hidden before:absolute before:left-0 before:top-0 before:h-5 before:w-full before:contrast-200 dark:before:brightness-200 before:rounded-b-lg flex justify-center items-center;
+    @apply fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-xl h-lg rounded-lg flex flex-col overflow-hidden before:absolute before:left-0 before:top-0 before:h-5 before:w-full before:contrast-200 dark:before:brightness-200 before:rounded-b-lg flex justify-center items-center resize text-center;
   }
 }
 

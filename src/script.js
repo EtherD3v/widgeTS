@@ -65,7 +65,7 @@ import "./style.css";
   document.addEventListener('DOMContentLoaded', function() {
     function game() {
       let THEGAME = document.getElementById('mygame')
-      let thegame = '<div style="position:absolute; top: 300px; left: 400px"><h1>https://github.com/SolarTypS/widgeTetriS--</div>'
+      let thegame = '<div style="position:absolute; top: 300px; left: 400px"><h1>https://github.com/EtherD3v/widgeTetriS--</div>'
       THEGAME.innerHTML= thegame
 
     }

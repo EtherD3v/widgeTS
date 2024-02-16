@@ -1,13 +1,20 @@
-  button {
+html,
+body{
+  justify-content: center;
+  align-items: center;
+  background: #ff2ff0;
+  z-index: 0;
+}
+button {
     filter: brightness(100%); /* luminosité normale */
-  }
+}
   
-  button:hover {
+button:hover {
     filter: brightness(50%); /* luminosité réduite de moitié */
-  }
-  img {
-    position: absolute; top: 10px; left: 650px;
-  }
+}
+img {
+    position: absolute;
+}
   
 
 
